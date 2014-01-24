@@ -37,6 +37,20 @@ group :production do
  gem 'rails_12factor', '0.0.2'
 end
 
+group :test, :development do
+ gem 'rspec-rails'
+ gem 'factory_girl_rails'
+ gem 'mailcatcher'
+end
+ 
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'spork', '~> 1.0rc'
+  gem 'database_cleaner'
+end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
