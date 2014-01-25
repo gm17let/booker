@@ -24,9 +24,6 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-#capybara
-gem 'capybara', '2.2.1'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
@@ -48,7 +45,7 @@ end
  
 group :test do
   gem 'faker'
-  gem 'capybara'
+  gem 'capybara', '2.2.1'
   gem 'spork', '~> 1.0rc'
   gem 'database_cleaner'
 end
